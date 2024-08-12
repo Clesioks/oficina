@@ -218,7 +218,7 @@ const Home = () => {
         <div className="filter d-flex justify-content-between align-items-center">
           <div className="d-flex">
             <div className="d-flex flex-column">
-              <h6>Selecione o Período 2</h6>
+              <h6>Selecione o Período</h6>
               <Select
                 value={frequency}
                 onChange={(value) => setFrequency(value)}
