@@ -31,6 +31,7 @@ const AddEditTransaction = ({
             userName: user.name,
             userId: user._id,
             isAdmin: user.isAdmin,
+            date: new Date(),
           },
           transactionId: selectedItemForEdit._id,
         });
@@ -42,6 +43,7 @@ const AddEditTransaction = ({
           userId: user._id,
           userEmail: user.email,
           userName: user.name,
+          date: new Date(),
         });
         getTransactions();
         message.success("Ordem de serviço adicionada com Sucesso!");
@@ -84,16 +86,15 @@ const AddEditTransaction = ({
             </Select>
           </Form.Item>
 
-          <Form.Item name="date" label="Selecione a data">
+          {/* <Form.Item name="date" label="Selecione a data">
             <Input type="date" />
-          </Form.Item>
+          </Form.Item> */}
 
           <Form.Item label="Serviço e/ou Peça:" name="servpecas">
             <Select placeholder="Selecione serviço ou peças">
               <Option value="Peças">Peça</Option>
               <Option value="Mão de obra">Mão de obra</Option>
               <Option value="Serviço e Mão de obra">Peça e Mão de obra</Option>
-              <Option value="Caixa">Saída - Caixa</Option>
             </Select>
           </Form.Item>
 
@@ -101,7 +102,6 @@ const AddEditTransaction = ({
             <Select placeholder="Selecione o cliente">
               <Option value="Particular">Particular</Option>
               <Option value="Prefeitura">Prefeitura</Option>
-              <Option value="outros">Outros</Option>
             </Select>
           </Form.Item>
 
@@ -113,7 +113,11 @@ const AddEditTransaction = ({
             <Input type="text" />
           </Form.Item>
 
-          <Form.Item label="Carro/Placa:" name="carroPlaca">
+          <Form.Item label="Carro:" name="carro">
+            <Input type="text" />
+          </Form.Item>
+
+          <Form.Item label="Placa:" name="placa">
             <Input type="text" />
           </Form.Item>
 
@@ -124,7 +128,6 @@ const AddEditTransaction = ({
               <Option value="Fagner">Fagner</Option>
               <Option value="Rafael">Rafael</Option>
               <Option value="Tiago">Tiago</Option>
-              <Option value="Caixa">Caixa</Option>
             </Select>
           </Form.Item>
 
@@ -176,12 +179,11 @@ const AddEditTransaction = ({
           <Form.Item label="Forma de pagamento" name="formapagamento">
             <Select placeholder="Selecione a forma de pagamento">
               <Option value="A definir">A Definir</Option>
-              <Option value="Dinheiro">Dinheiro</Option>
-              <Option value="Pix">Pix</Option>
               <Option value="Cartão">Cartão</Option>
-              <Option value="Ficha">Ficha</Option>
+              <Option value="Dinheiro">Dinheiro</Option>
               <Option value="Empenho">Empenho</Option>
-              <Option value="saida">Saída</Option>
+              <Option value="Ficha">Ficha</Option>
+              <Option value="Pix">Pix</Option>
             </Select>
           </Form.Item>
 

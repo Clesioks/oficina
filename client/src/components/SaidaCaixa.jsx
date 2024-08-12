@@ -20,7 +20,8 @@ const SaidaCaixa = ({ showValorSaida, setShowValorSaida, getTransactions }) => {
         servpecas: "-",
         cliente: "-",
         nomeCliente: "Saída do Caixa",
-        carroPlaca: "-",
+        carro: "-",
+        placa: "-",
         telefone: "-",
         mecanico: "-",
         descriptionPecas: "-",
@@ -29,6 +30,7 @@ const SaidaCaixa = ({ showValorSaida, setShowValorSaida, getTransactions }) => {
         valorDaObra: 0,
         formapagamento: "-",
         type: "saida",
+        date: new Date(),
       });
       getTransactions();
       message.success("Registro de saída adicionado com sucesso!");
@@ -62,13 +64,13 @@ const SaidaCaixa = ({ showValorSaida, setShowValorSaida, getTransactions }) => {
               <Option value="saida">Saída</Option>
             </Select>
           </Form.Item> */}
-
+          {/* 
           <Form.Item name="date" label="Selecione a data">
             <Input type="date" />
-          </Form.Item>
+          </Form.Item> */}
 
           <Form.Item label="Motivo da saída do caixa:" name="obsSaida">
-            <Input type="text" />
+            <Input type="text" className={{ color: "red" }} />
           </Form.Item>
 
           <Form.Item label="Valor:" name="amount">

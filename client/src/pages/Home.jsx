@@ -139,6 +139,10 @@ const Home = () => {
       dataIndex: "telefone",
     },
     {
+      title: "Carro",
+      dataIndex: "carro",
+    },
+    {
       title: "Peças",
       dataIndex: "valorPecas",
     },
@@ -359,7 +363,8 @@ const Home = () => {
           <br></br>
           <div>Nome: {selectedItemFromPrint.nomeCliente}</div>
           <div>Telefone: {selectedItemFromPrint.telefone}</div>
-          <div>Carro/Placa: {selectedItemFromPrint.carroPlaca}</div>
+          <div>Carro: {selectedItemFromPrint.carro}</div>
+          <div>Placa: {selectedItemFromPrint.placa}</div>
           <hr />
           <div>Serviço e/ou Peças: {selectedItemFromPrint.servpecas}</div>
           <div>

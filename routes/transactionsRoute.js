@@ -60,7 +60,7 @@ router.post('/get-all-transactions', async(req, res) => {
             } : {
                 date: {
                     $gte: req.body.selectedRange[0],
-                    $lte: req.body.selectedRange[1]
+                    $lte: req.body.selectedRange[1].substr(0, 10)+'T23:59:59.000Z'
                 }
             }),
             userid: req.body.userid,
@@ -87,7 +87,8 @@ router.post('/get-all-print-id', async(req, res) => {
             date: order.date,
             nomeCliente: order.nomeCliente,
             cliente: order.cliente,
-            carroPlaca: order.carroPlaca,
+            carro: order.carro,
+            placa: order.placa,
             telefone: order.telefone,
             descriptionPecas: order.descriptionPecas,
             mecanico: order.mecanico,
