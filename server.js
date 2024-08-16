@@ -7,7 +7,7 @@ import userRoute from './routes/usersRoutes.js'
 import transactionsRoute from './routes/transactionsRoute.js'
 
 
-const port = process.env.PORT || 21075
+const port = process.env.PORT || 57133
 
 connectDB()
 
