@@ -1,0 +1,53 @@
+.filter {
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(175, 173, 173);
+
+}
+
+.transaction-form label {
+    color: black
+}
+
+.transaction-form input:focus{
+    border: 1px solid gray;
+}
+
+.ant-modal-header {
+    text-align: center;    
+}
+
+.view-switch {
+    border: 1px solid rgba(0, 0, 0, 0.71);
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.anticon svg {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.active-icon {
+    color: black;
+}
+
+.inactive-icon {
+    color: grey
+}
+
+@media screen and (max-width: 600px) {
+    .filter{
+        overflow-x: scroll;
+    }
+    
+}
+
+.align-items-center {
+    align-items: center;
+    display: flex;
+}
+
+.negrito {
+    font-weight: 500;
+}
