@@ -259,13 +259,15 @@ const Home = () => {
             <button className="primary" onClick={() => setShowValorSaida(true)}>
               Caixa
             </button>
-            {/* <div className="mx-2 my-2">Cotação:</div> 
+            <div className="mx-2 my-2" style={{ color: "red" }}>
+              Cotação:
+            </div>
             <button
               className="primary"
               onClick={() => setShowModalCotation(true)}
             >
               Calcular
-            </button> */}
+            </button>
             <div>
               <div className="view-switch mx-5">
                 <UnorderedListOutlined
