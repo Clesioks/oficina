@@ -259,7 +259,7 @@ const Home = () => {
             <button className="primary" onClick={() => setShowValorSaida(true)}>
               Caixa
             </button>
-            {/* <div className="mx-2 my-2">Cotação:</div>
+            {/* <div className="mx-2 my-2">Cotação:</div> 
             <button
               className="primary"
               onClick={() => setShowModalCotation(true)}
