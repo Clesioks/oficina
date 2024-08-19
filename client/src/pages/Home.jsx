@@ -342,7 +342,7 @@ const Home = () => {
           {/* <div className="marcador align-items-center">
             <img src={logo} width="140" height="75" alt="logo" />
           </div> */}
-          <h3 className="text-center">Auto Peças Baclzarek </h3>
+          <h3 className="text-center">Auto Peças Balczarek </h3>
           <h6 className="text-center">
             Rua Cândido Godói, 620 - Centro - Dom Feliciano/RS - Tel:
             51-99619-9747
