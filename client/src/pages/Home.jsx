@@ -150,12 +150,6 @@ const Home = () => {
       title: "Mão de obra",
       dataIndex: "valorDaObra",
     },
-    // {
-    //   title: "Total",
-    //   dataIndex: "amount",
-    //   render: (text, record) =>
-    //     parseInt(record.valorPecas) + parseInt(record.valorDaObra),
-    // },
     {
       title: "Total",
       dataIndex: "amount",
@@ -163,6 +157,10 @@ const Home = () => {
     {
       title: "Mecânico",
       dataIndex: "mecanico",
+    },
+    {
+      title: "MC Sistema",
+      dataIndex: "mcSistema",
     },
     {
       title: "Ações",
@@ -199,9 +197,6 @@ const Home = () => {
       },
     },
   ];
-
-  const credito10x = (selectedItemFromPrint.amount * 4) / 100;
-  const totalem10x = credito10x + selectedItemFromPrint.amount;
 
   const currencyBRL = (valor) => {
     const formattedValue = valor?.toLocaleString("pt-BR", {

@@ -187,6 +187,13 @@ const AddEditTransaction = ({
             </Select>
           </Form.Item>
 
+          <Form.Item label="MC Sistema" name="mcSistema">
+            <Select placeholder="Atualizado MC Sistema?">
+              <Option value="Sim">Sim</Option>
+              <Option value="Não">Não</Option>
+            </Select>
+          </Form.Item>
+
           <Form.Item label="Observações da Ordem de serviço:" name="obsPedido">
             <Input type="text" />
           </Form.Item>

@@ -85,6 +85,7 @@ router.post("/get-all-print-id", async (req, res) => {
       obsSaida: order.obsSaida,
       userName: order.userName,
       obsPedido: order.obsPedido,
+      mcSistema: order.mcSistema,
     });
   } catch (error) {
     res.status(500).json(error);

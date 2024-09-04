@@ -21,6 +21,7 @@ const schema = mongoose.Schema({
   userName: { type: String, required: true },
   obsSaida: { type: String },
   obsPedido: { type: String },
+  mcSistema: { type: String },
   id: { type: Number },
 });
 
