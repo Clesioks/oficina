@@ -1,9 +1,9 @@
-import { Form, Input, message, Select } from "antd";
+import { Form, Input, message } from "antd";
 import Modal from "antd/es/modal/Modal";
 import React, { useState } from "react";
 import Spinner from "./Spinner";
 import axios from "axios";
-const { Option } = Select;
+// const { Option } = Select;
 
 const SaidaCaixa = ({ showValorSaida, setShowValorSaida, getTransactions }) => {
   const [loading, setLoading] = useState(false);

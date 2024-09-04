@@ -384,6 +384,7 @@ const Home = () => {
             Valor da mão de obra: R${selectedItemFromPrint.valorDaObra}
           </div>
           <hr />
+          <div>Observação: {selectedItemFromPrint.obsPedido}</div>
           <div>
             <div className="negrito">
               {/* Valot total em 5x:{" "}
