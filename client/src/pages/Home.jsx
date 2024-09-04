@@ -391,7 +391,7 @@ const Home = () => {
                 {currencyBRL(totalem10x)}
               </span> */}
               <br></br>
-              Valor total com desconto:{" "}
+              Valor total:{" "}
               <span style={{ color: "red", fontWeight: "bold" }}>
                 {currencyBRL(selectedItemFromPrint.amount)}
               </span>
