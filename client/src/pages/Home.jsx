@@ -386,10 +386,10 @@ const Home = () => {
           <hr />
           <div>
             <div className="negrito">
-              Valot total em 5x:{" "}
+              {/* Valot total em 5x:{" "}
               <span style={{ color: "red", fontWeight: "bold" }}>
                 {currencyBRL(totalem10x)}
-              </span>
+              </span> */}
               <br></br>
               Valor total com desconto:{" "}
               <span style={{ color: "red", fontWeight: "bold" }}>
