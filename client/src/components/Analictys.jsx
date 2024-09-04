@@ -138,12 +138,14 @@ const Analictys = ({ transactions }) => {
         <div className="row">
           <div className="col-md-4 mt-3">
             <div className="transactions-count">
-              <h4>Total de Ordem de Serviços: {totalTransactions}</h4>
+              <h4>
+                Total de Ordem de Serviços: {totalIncomeTransactions.length}
+              </h4>
               <hr />
               <h5>Entrada: {totalIncomeTransactions.length}</h5>
               <h5>Saída: {totalExpenceTransactions.length}</h5>
 
-              <div className="progress-bars">
+              {/* <div className="progress-bars">
                 <Progress
                   className="mx-5"
                   type="circle"
@@ -155,7 +157,7 @@ const Analictys = ({ transactions }) => {
                   strokeColor="red"
                   percent={totalExpenceTransactionsPercentage.toFixed(0)}
                 />
-              </div>
+              </div> */}
             </div>
           </div>
 

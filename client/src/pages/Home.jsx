@@ -26,6 +26,7 @@ import Analictys from "../components/Analictys";
 import { useReactToPrint } from "react-to-print";
 import dayjs from "dayjs";
 import Modal from "antd/es/modal/Modal";
+import Tempo from "../components/Tempo";
 const { RangePicker } = DatePicker;
 
 dayjs().format();
