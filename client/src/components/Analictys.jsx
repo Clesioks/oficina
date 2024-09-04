@@ -27,9 +27,15 @@ const Analictys = ({ transactions }) => {
     .filter((transaction) => transaction.type === "entrada")
     .reduce((acc, transaction) => acc + transaction.amount, 0);
 
+  const somaDinheiro = transactions
+    .filter((transaction) => transaction.formapagamento === "Dinheiro")
+    .reduce((acc, transaction) => acc + transaction.amount, 0);
+
   const totalExpenceTurnover = transactions
     .filter((transaction) => transaction.type === "saida")
     .reduce((acc, transaction) => acc + transaction.amount, 0);
+
+  const entradaMenosSaída = somaDinheiro - totalExpenceTurnover;
 
   const totalIncomeTurnoverPercentage =
     (totalIncomeTurnover / totalTurnover) * 100;
@@ -93,6 +99,13 @@ const Analictys = ({ transactions }) => {
                 )
               );
             })}
+            <div
+              className="category-card-2"
+              style={{ color: "green", fontSize: 16, fontWeight: "bold" }}
+            >
+              Dinheiro Caixa: R${entradaMenosSaída}
+            </div>
+            <br></br>
           </div>
           <div className="col-md-6">
             <div className="category-analysis"></div>
@@ -189,8 +202,8 @@ const Analictys = ({ transactions }) => {
             <div className="transactions-count">
               <h4>Total em R$: {totalIncomeTurnover - totalExpenceTurnover}</h4>
               <hr />
-              <h5>Entrada: {totalIncomeTurnover}</h5>
-              <h5>Saída: {totalExpenceTurnover}</h5>
+              <h5>Entrada: R${totalIncomeTurnover}</h5>
+              <h5>Saída: R${totalExpenceTurnover}</h5>
 
               <div className="progress-bars">
                 <Progress

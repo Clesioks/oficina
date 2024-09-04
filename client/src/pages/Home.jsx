@@ -26,7 +26,6 @@ import Analictys from "../components/Analictys";
 import { useReactToPrint } from "react-to-print";
 import dayjs from "dayjs";
 import Modal from "antd/es/modal/Modal";
-import Tempo from "../components/Tempo";
 const { RangePicker } = DatePicker;
 
 dayjs().format();
@@ -369,6 +368,7 @@ const Home = () => {
           <div>Carro: {selectedItemFromPrint.carro}</div>
           <div>Placa: {selectedItemFromPrint.placa}</div>
           <hr />
+          <h6>Colaborador(a): {selectedItemFromPrint.userName}</h6>
           <div>Serviço e/ou Peças: {selectedItemFromPrint.servpecas}</div>
           <div>
             Descrição das peças: {selectedItemFromPrint.descriptionPecas}
@@ -400,10 +400,17 @@ const Home = () => {
           <br></br>
           <div>Forma de pagamento: {selectedItemFromPrint.formapagamento}</div>
           <br></br>
-          Colaborador(a): {selectedItemFromPrint.userName}
+          <div>Autorizo a Oficina Balzarek a efetuar o serviço.</div>
+          <div>
+            <br></br>
+            -------------------------<br></br>
+            {selectedItemFromPrint.nomeCliente},<br></br>
+          </div>
+
           <br></br>
           {selectedItemFromPrint.reference}
         </div>
+
         <div className="mt-5">
           <button onClick={handlePrint}>Imprimir</button>
         </div>
