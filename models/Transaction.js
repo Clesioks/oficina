@@ -16,6 +16,7 @@ const schema = mongoose.Schema({
   valorDaObra: { type: String, required: true },
   amount: { type: Number, required: true },
   mecanico: { type: String, required: true },
+  mecanico2: { type: String },
   formapagamento: { type: String, required: true },
   userEmail: { type: String, required: true },
   userName: { type: String, required: true },

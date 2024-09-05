@@ -50,9 +50,9 @@ const Login = () => {
             </Form.Item>
 
             <div className="d-flex justify-content-between align-items-center">
-              <Link to="/register">
+              {/* <Link to="/register">
                 Ainda não registrado? Clique para se registrar
-              </Link>
+              </Link> */}
               <button className="primary" type="submit">
                 LOGIN
               </button>

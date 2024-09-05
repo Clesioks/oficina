@@ -39,6 +39,7 @@ router.post("/get-all-transactions", async (req, res) => {
   const { frequency, selectedRange, type } = req.body;
   try {
     const sort = { OSid: -1 };
+
     const transactions = await Transactiom.find({
       ...(frequency !== "custom"
         ? {

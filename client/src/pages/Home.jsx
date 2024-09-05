@@ -159,6 +159,10 @@ const Home = () => {
       dataIndex: "mecanico",
     },
     {
+      title: "Mecânico 2",
+      dataIndex: "mecanico2",
+    },
+    {
       title: "MC Sistema",
       dataIndex: "mcSistema",
     },

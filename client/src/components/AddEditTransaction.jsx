@@ -131,6 +131,15 @@ const AddEditTransaction = ({
             </Select>
           </Form.Item>
 
+          <Form.Item label="Mecânico 2" name="mecanico2">
+            <Select placeholder="Selecione um mecânico">
+              <Option value="Beto">Beto</Option>
+              <Option value="Fagner">Fagner</Option>
+              <Option value="Rafael">Rafael</Option>
+              <Option value="Tiago">Tiago</Option>
+            </Select>
+          </Form.Item>
+
           <div className="borda">
             <Form.Item label="Descrição das peças:" name="descriptionPecas">
               <TextArea type="text" />
